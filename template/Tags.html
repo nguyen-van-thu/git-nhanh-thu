@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Management</title>
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- third party css -->
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <!-- third party css end -->
+
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
+
+    <link href="assets/css/bootstrap-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" disabled />
+    <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" disabled />
+
+    <!-- icons -->
+    <!--    <link href="../../assets/css/icons.min.css" rel="stylesheet" type="text/css" />-->
+</head>
+<body>
+<div id="wrapper">
+    <!-- Topbar Start -->
+    <div class="navbar-custom">
+        <div class="container-fluid">
+            <ul class="list-unstyled topnav-menu float-right mb-0">
+
+                <li class="d-none d-lg-block">
+                    <form class="app-search">
+                        <div class="app-search-box dropdown">
+                            <div class="dropdown-menu dropdown-lg" id="search-dropdown">
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="dropdown d-none d-lg-inline-block topbar-dropdown">
+                    <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="assets/images/flags/us.jpg" alt="user-image" height="16">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                    </div>
+                </li>
+
+<!--                <li class="dropdown notification-list topbar-dropdown">-->
+<!--                    <a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">-->
+<!--                        <i class="fe-bell noti-icon"></i>-->
+<!--                        <span class="badge badge-danger rounded-circle noti-icon-badge">9</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+            </ul>
+            <!-- LOGO -->
+            <div class="logo-box">
+                <a href="index.html" class="logo logo-dark text-center">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-sm.png" alt="" height="22">
+                                <!-- <span class="logo-lg-text-light">UBold</span> -->
+                            </span>
+                    <span class="logo-lg">
+                                <img src="assets/images/logo-dark.png" alt="" height="20">
+                        <!-- <span class="logo-lg-text-light">U</span> -->
+                            </span>
+                </a>
+                <a href="index.html" class="logo logo-light text-center">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-sm.png" alt="" height="22">
+                            </span>
+                    <span class="logo-lg">
+                                <img src="assets/images/logo-light.png" alt="" height="20">
+                            </span>
+                </a>
+            </div>
+            <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+                <li>
+                    <button class="button-menu-mobile waves-effect waves-light">
+                        <i class="fe-menu"></i>
+                    </button>
+                </li>
+                <li class="dropdown dropdown-mega d-none d-xl-block">
+                    <a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        Nhóm 4
+                        <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- end Topbar -->
+    <div class="left-side-menu">
+        <div class="h-100" data-simplebar>
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+                <ul id="side-menu">
+                    <li class="menu-title mt-2">Apps</li>
+                    <li>
+                        <a href="apps-calendar.html">
+                            <i data-feather="calendar"></i>
+                            <span> Calendar </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="apps-chat.html">
+                            <i data-feather="message-square"></i>
+                            <span> Chat </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="apps-companies.html">
+                            <i data-feather="activity"></i>
+                            <span> Companies </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="apps-file-manager.html">
+                            <i data-feather="folder-plus"></i>
+                            <span> File Manager </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sidebarExtendedui" data-toggle="collapse">
+                            <i data-feather="layers"></i>
+                            <span class="badge badge-info float-right">Hot</span>
+                            <span> Extended UI </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Sidebar -->
+            <div class="clearfix"></div>
+        </div>
+        <!-- Sidebar -left -->
+    </div>
+    <div class="content-page">
+        <div class="content">
+            <!-- Start Content-->
+            <div class="container-fluid">
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Home</a></li>
+                                </ol>
+                            </div>
+                            <h4 class="page-title">Danh Mục Sản Phẩm</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row mb-2">
+                                    <a href="/creattag" class="btn btn-primary">Thêm  </a>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-centered table-striped dt-responsive nowrap w-100" id="products-datatable">
+                                        <thead>
+                                        <tr>
+                                            <th style="width: 20px;">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck0">
+                                                    <label class="custom-control-label" for="customCheck0">&nbsp;</label>
+                                                </div>
+                                            </th>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Slug</th>
+                                            <th>Inning</th>
+                                            <th>View</th>
+                                            <th style="width: 75px;">Action</th>
+                                        </tr>
+                                            {Tags}
+                                        </thead>
+                                        <tbody>
+<!--                                        {Tags}-->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div> <!-- end card-body-->
+                        </div> <!-- end card-->
+                    </div> <!-- end col -->
+                </div>
+            </div> <!-- container -->
+        </div> <!-- content -->
+    </div>
+</div>
+<script src="assets/js/vendor.min.js"></script>
+<!-- third party js -->
+<script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+<!-- third party js ends -->
+
+<!-- Datatables init -->
+<script src="assets/js/pages/customers.init.js"></script>
+
+<!-- App js -->
+<script src="assets/js/app.min.js"></script>
+</body>
+</html>
